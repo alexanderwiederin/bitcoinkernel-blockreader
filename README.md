@@ -37,7 +37,7 @@ The benefits of this architecture include **resource sharing** between multiple 
 - **Performance benchmarking** - conduct tests comparing direct kernel access vs Bitcoin Core's RPC
 - **Stress testing** - validate stability under high-load scenarios with multiple concurrent read-only instances
 
-### Intergation
+### Integration
 
 - **Downstream application integration** - pilot implementation with applications like Electrs
 
