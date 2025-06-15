@@ -2,7 +2,7 @@
 
 ## Goal
 
-**Bitcoinkernel readers** is a project to implement a **blockfiles read-only mode** to libbitcoinkernel.
+**Bitcoinkernel readers** is a project to implement a **blockfiles read-only mode** to libbitcoinkernel, enabling parallel bitcoinkernel instances.
 
 ## Context
 Currently, bitcoinkernel instances can not run in parallel due to **LevelDB's exclusive locking**. The blockfiles read-only mode will enable an architecture where a data directory is shared between a bitcoinkernel instance (belonging to a fully functional bitcoin core node) and **multiple read-only bitcoinkernel instances** that expose their APIs to external applications.
