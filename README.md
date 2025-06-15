@@ -8,7 +8,7 @@
 Currently, bitcoinkernel instances can not run in parallel due to **LevelDB's exclusive locking**. The blockfiles read-only mode will enable an architecture where a data directory is shared between a bitcoinkernel instance (belonging to a fully functional bitcoin core node) and **multiple read-only bitcoinkernel instances** that expose their APIs to external applications.
 [TheCharlatan](https://github.com/TheCharlatan) has already proposed a change to [introduce an initial C API](https://github.com/bitcoin/bitcoin/pull/30595) and [replace the leveldb-based BlockTreeDB with a flat-file based store](https://github.com/bitcoin/bitcoin/pull/32427) which **lays the foundation** for the feature.
 
-Continuing work on both proposed changes has allowed for the functionality to be tested in my [blocktreestore-on-kernelApi](https://github.com/alexanderwiederin/bitcoin/commits/blocktreestore-on-kernelApi/) branch in bitcoin core, which I have used in conjunction with [rust-bitcoinkernel](https://github.com/alexanderwiederin/rust-bitcoinkernel/tree/test-blocktreestore-on-kernelApi) to build an end-to-end POC on Signet.
+Continuing work on both proposed changes has allowed for the functionality to be tested in my [blocktreestore-on-kernelApi](https://github.com/alexanderwiederin/bitcoin/tree/blocktreestore-on-kernelApi/) branch in bitcoin core, which I have used in conjunction with [rust-bitcoinkernel](https://github.com/alexanderwiederin/rust-bitcoinkernel/tree/test-blocktreestore-on-kernelApi) to build an end-to-end POC on Signet.
 
 ## Benefits
 
