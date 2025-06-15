@@ -31,7 +31,7 @@ The benefits of this architecture include **resource sharing** between multiple 
 - **Implement increased flushing** in Bitcoin Core to improve synchroninization between read-only instances
 - **Expand language bindings** - expand langugage bindings to support blockfiles read-only mode
 
-### Validation and Performance
+### Validation
 
 - **Validate API functionality** - test functionality of rust-bitcoinkernel or py-bitcoin with blockfiles read-only bitcoinkernel instances
 - **Performance benchmarking** - conduct tests comparing direct kernel access vs Bitcoin Core's RPC
