@@ -88,6 +88,6 @@ graph TB
     DD --> K3[KernelApi<br/>Read-Only]
     DD --> K4
     
-    K3 --> A2[Application<br/>e.g. Silent<br/>Payments<br/>Python]
+    K3 --> A2[Application<br/>e.g. Silent<br/>Payments<br/>Go]
 ```
 
