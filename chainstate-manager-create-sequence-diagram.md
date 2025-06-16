@@ -11,6 +11,8 @@ This ZenUML sequence diagram illustrates the detailed initialization and loading
 
 To render this diagram, copy the ZenUML code and paste it into the [ZenUML web application](https://app.zenuml.com/). The interactive diagram will help you understand the complex interactions between Bitcoin Core's core components during blockchain initialization.
 
+Note: This a WIP and may not be accurate.
+
 ## Sequence Diagram
 ```zenuml
 title KernelChainstateManager
