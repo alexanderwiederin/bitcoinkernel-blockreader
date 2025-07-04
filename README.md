@@ -45,6 +45,7 @@ The benefits of this architecture include **resource sharing** between multiple 
 ### Potential Enhancement
 
 - **Chainstate read-only access** - explore solutions for UTXO-based operations without LevelDB conflicts
+- **Notifications** to announce changes to blockfiles
 - **Community feedback** - gather input for kernel API design through real-world usage
 
 ## Architecture Comparison
