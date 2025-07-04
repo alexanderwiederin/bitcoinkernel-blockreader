@@ -77,17 +77,16 @@ graph TB
     BC[BitcoinCore<br/>C++] <--> K1[KernelApi<br/>Read/Write]
     K1 <--> DD
     
-    K2[KernelApi<br/>Read-Only] --> A1[Application<br/>e.g. Electrs<br/>Rust]
+    K2[Blockreader] --> A1[Application<br/>e.g. Electrs<br/>Rust]
     
     subgraph DD [DataDir]
         BI[Blocks]
-        CS[Chainstate]
     end
     
-    K4[KernelApi<br/>Read-Only] --> A3[Application<br/>e.g. Analytics<br/>R]
+    K4[Blockreader] --> A3[Application<br/>e.g. Analytics<br/>R]
     
     DD --> K2
-    DD --> K3[KernelApi<br/>Read-Only]
+    DD --> K3[Blockreader]
     DD --> K4
     
     K3 --> A2[Application<br/>e.g. Silent<br/>Payments<br/>Go]
