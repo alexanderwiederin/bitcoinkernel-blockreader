@@ -8,7 +8,7 @@
 Currently, bitcoinkernel instances can not run in parallel due to **LevelDB's exclusive locking**. The blockreaders will enable an architecture where a data directory is shared between a bitcoinkernel instance belonging to a fully functional bitcoin core node and **multiple blockreaders** that expose their APIs to external applications.
 [TheCharlatan](https://github.com/TheCharlatan) has already proposed a change to [introduce an initial C API](https://github.com/bitcoin/bitcoin/pull/30595) and [replace the leveldb-based BlockTreeDB with a flat-file based store](https://github.com/bitcoin/bitcoin/pull/32427) which **lays the foundation** for the project.
 
-Continuing work on both proposed changes has allowed for the functionality to be tested in my [blockreader](https://github.com/alexanderwiederin/bitcoin/tree/blockreader/) branch in bitcoin core, which I have used in conjunction with [rust-bitcoinkernel](https://github.com/alexanderwiederin/rust-bitcoinkernel/tree/test-blocktreestore-on-kernelApi) to build an end-to-end POC on Signet.
+Continuing work on both proposed changes has allowed for the functionality to be tested in my [blockreader](https://github.com/alexanderwiederin/bitcoin/tree/btck_api_reader/) branch in bitcoin core, which I have used in conjunction with [rust-bitcoinkernel](https://github.com/alexanderwiederin/rust-bitcoinkernel/tree/btck_api_reader) to build an end-to-end POC on Signet.
 
 ## Benefits
 
